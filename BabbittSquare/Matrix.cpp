@@ -34,7 +34,7 @@ int Matrix::GetDist() const {
 	return dist;
 }
 
-#define CONDITION(op, mt, pos)														\
+#define CONDITION(op, mt, pos)								\
 [op, mt](vector <int>& t) {return t.pos() == ((op.value + mt.GetDist()) % 12);}		\
 
 vector <int> Calculate(const Operation& o, const Matrix& m) {
