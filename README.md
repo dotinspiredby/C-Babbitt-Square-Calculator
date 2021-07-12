@@ -19,6 +19,5 @@ Example:
 
 RI10
 <--- ROW OF RI10----->
-I3
-<----ROW OF I3------->
+
 and so on....
