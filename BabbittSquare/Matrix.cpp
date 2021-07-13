@@ -139,7 +139,9 @@ void GlobalParse(const string& line, vector <int>& in_row) {
 		else {
 			throw (invalid_argument("Wrong/Unknown Command"));
 		}
-
+		if (in_row.empty()) {
+			throw (invalid_argument("No Prime Row given"));
+		}
 		Matrix mt = Matrix(in_row);
 		vector <int> CMatrix = Calculate(oper, mt);
 		cout << CMatrix << endl;
