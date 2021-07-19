@@ -67,7 +67,7 @@ ostream& operator <<(ostream& out, Matrix& m) {
 		for (const auto i : row) {
 			out << i << "\t";
 		}
-		out << endl;
+		out << "\n";
 	}
 	return out;
 }
